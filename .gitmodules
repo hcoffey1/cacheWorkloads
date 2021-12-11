@@ -1,0 +1,9 @@
+[submodule "workloads/pointer-chasing"]
+	path = workloads/pointer-chasing
+	url = https://github.com/afborchert/pointer-chasing.git
+[submodule "workloads/uarch-bench"]
+	path = workloads/uarch-bench
+	url = https://github.com/travisdowns/uarch-bench.git
+[submodule "workloads/fait-maison-spmv"]
+	path = workloads/fait-maison-spmv
+	url = https://github.com/Sable/fait-maison-spmv.git
