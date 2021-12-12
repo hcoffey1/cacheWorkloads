@@ -6,7 +6,7 @@
 	url = https://github.com/travisdowns/uarch-bench.git
 [submodule "workloads/fait-maison-spmv"]
 	path = workloads/fait-maison-spmv
-	url = https://github.com/Sable/fait-maison-spmv.git
+	url = https://github.com/hcoffey1/fait-maison-spmv.git
 [submodule "workloads/memorytest"]
 	path = workloads/memorytest
 	url = https://gist.github.com/hcoffey1/879903abcfe1468129991406a2a652a4
