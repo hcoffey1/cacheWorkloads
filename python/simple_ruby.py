@@ -65,6 +65,7 @@ parser.add_argument("binary", default="", nargs="+", type=str, help="Binary to e
 parser.add_argument("--cpu", type=str, help="CPU type. Default: DerivO3CPU.")
 parser.add_argument('--rp', metavar='rp', help=rp_help, default='LRURP')
 parser.add_argument("--options", type=str, help="Command line args")
+parser.add_argument("--input", type=str, help="Input file")
 args = parser.parse_args()
 # create the system we are going to simulate
 system = System()
@@ -123,6 +124,10 @@ process = Process()
 # Set the command
 # cmd is a list which begins with the executable (like argv)
 process.cmd = binary
+
+if args.input:
+    process.input = args.input
+
 # Set the cpu to use the process as its workload and create thread contexts
 system.cpu.workload = process
 system.cpu.createThreads()
