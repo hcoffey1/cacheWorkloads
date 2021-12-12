@@ -112,15 +112,17 @@ if args.options:
     binary = binary + [args.options]
 
 
+
 #binary = os.path.join(thispath, '../../',
 #                      'tests/test-progs/hello/bin/', isa, 'linux/hello')
+
 system.workload = SEWorkload.init_compatible(binary[0])
 
 # Create a process for a simple "Hello World" application
 process = Process()
 # Set the command
 # cmd is a list which begins with the executable (like argv)
-process.cmd = [binary[0]]
+process.cmd = binary
 # Set the cpu to use the process as its workload and create thread contexts
 system.cpu.workload = process
 system.cpu.createThreads()
