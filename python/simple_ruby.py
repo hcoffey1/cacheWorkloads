@@ -37,14 +37,16 @@ IMPORTANT: If you modify this file, it's likely that the Learning gem5 book
 
 # File modified to use Ruby
 
-# import the m5 (gem5) library created when gem5 is built
+
+gem5Path="/home/hayden/proj/cs752/cache/gem5Public/gem5/configs"
+
+import sys
+sys.path.insert(0, gem5Path)
+
 import m5
 import argparse
-# import all of the SimObjects
 from m5.objects import *
-#from MI_example_caches import MyCacheSystem
 from ruby_caches import MyCacheSystem
-m5.util.addToPath( '../')
 from common.ObjectList import ObjectList
 
 # Make a list of all replcacement policies
@@ -59,8 +61,10 @@ rp_help = '''Replacement policies for ruby/classic system. Optional
 replacement policies are:
 '''
 rp_help += '\n'.join(rp_list.get_names())
-
+parser.add_argument("binary", default="", nargs="+", type=str, help="Binary to execute.")
+parser.add_argument("--cpu", type=str, help="CPU type. Default: DerivO3CPU.")
 parser.add_argument('--rp', metavar='rp', help=rp_help, default='LRURP')
+parser.add_argument("--options", type=str, help="Command line args")
 args = parser.parse_args()
 # create the system we are going to simulate
 system = System()
@@ -73,10 +77,12 @@ system.clk_domain.voltage_domain = VoltageDomain()
 # Set up the system
 system.mem_mode = 'timing'               # Use timing accesses
 system.mem_ranges = [AddrRange('512MB')] # Create an address range
-#system.mem_ranges = [AddrRange('8192MB')] # Create an address range
 
 # Create a simple CPU
-system.cpu = DerivO3CPU()
+if not args.cpu:
+    system.cpu = DerivO3CPU()
+else:
+    system.cpu = eval(args.cpu + "()")
 
 # create the interrupt controller for the CPU and connect to the membus
 system.cpu.createInterruptController()
@@ -85,8 +91,6 @@ system.cpu.createInterruptController()
 system.mem_ctrl = MemCtrl()
 system.mem_ctrl.dram = DDR3_1600_8x8()
 system.mem_ctrl.dram.range = system.mem_ranges[0]
-#system.mem_ctrl = SimpleMemory()
-#system.mem_ctrl.range = system.mem_ranges[0]
 
 # Create the (Ruby based) cache system and set up all of the caches
 system.caches = MyCacheSystem()
@@ -99,16 +103,24 @@ isa = str(m5.defines.buildEnv['TARGET_ISA']).lower()
 # Default to running 'hello', use the compiled ISA to find the binary
 # grab the specific path to the binary
 thispath = os.path.dirname(os.path.realpath(__file__))
-binary = os.path.join(thispath, '../../',
-                      'tests/test-progs/hello/bin/', isa, 'linux/hello')
 
-system.workload = SEWorkload.init_compatible(binary)
+binary = None
+if args.binary:
+    binary = args.binary
+
+if args.options:
+    binary = binary + [args.options]
+
+
+#binary = os.path.join(thispath, '../../',
+#                      'tests/test-progs/hello/bin/', isa, 'linux/hello')
+system.workload = SEWorkload.init_compatible(binary[0])
 
 # Create a process for a simple "Hello World" application
 process = Process()
 # Set the command
 # cmd is a list which begins with the executable (like argv)
-process.cmd = [binary]
+process.cmd = [binary[0]]
 # Set the cpu to use the process as its workload and create thread contexts
 system.cpu.workload = process
 system.cpu.createThreads()
