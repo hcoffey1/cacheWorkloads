@@ -1,0 +1,118 @@
+BRRIP
+simTicks                                  51289654000                       # Number of ticks simulated (Tick)
+simTicks                                   1792316000                       # Number of ticks simulated (Tick)
+simTicks                                    757963000                       # Number of ticks simulated (Tick)
+
+simInsts                                     46698355                       # Number of instructions simulated (Count)
+simInsts                                     47746939                       # Number of instructions simulated (Count)
+simInsts                                     48412043                       # Number of instructions simulated (Count)
+
+system.caches.controllers0.cacheMemory.m_demand_hits     28063456                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        37525                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28100981                       # Number of cache demand accesses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_hits     28476466                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        54105                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28530571                       # Number of cache demand accesses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_hits     28753138                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        63119                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28816257                       # Number of cache demand accesses (Unspecified)
+
+system.cpu.totalIpc                          0.910483                       # IPC: Total IPC of All Threads ((Count/Cycle))
+system.cpu.totalIpc                          0.585044                       # IPC: Total IPC of All Threads ((Count/Cycle))
+system.cpu.totalIpc                          0.877489                       # IPC: Total IPC of All Threads ((Count/Cycle))
+
+
+LRU
+simTicks                                  51196023000                       # Number of ticks simulated (Tick)
+simTicks                                   1473709000                       # Number of ticks simulated (Tick)
+simTicks                                    759137000                       # Number of ticks simulated (Tick)
+
+simInsts                                     46698355                       # Number of instructions simulated (Count)
+simInsts                                     47746939                       # Number of instructions simulated (Count)
+simInsts                                     48412043                       # Number of instructions simulated (Count)
+
+system.caches.controllers0.cacheMemory.m_demand_hits     28065872                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        35571                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28101443                       # Number of cache demand accesses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_hits     28475535                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        51960                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28527495                       # Number of cache demand accesses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_hits     28752246                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        60943                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28813189                       # Number of cache demand accesses (Unspecified)
+
+system.cpu.totalIpc                          0.912148                       # IPC: Total IPC of All Threads ((Count/Cycle))
+system.cpu.totalIpc                          0.711527                       # IPC: Total IPC of All Threads ((Count/Cycle))
+system.cpu.totalIpc                          0.876132                       # IPC: Total IPC of All Threads ((Count/Cycle))
+
+
+Random
+simTicks                                  51484160000                       # Number of ticks simulated (Tick)
+simTicks                                   1447847000                       # Number of ticks simulated (Tick)
+simTicks                                    752020000                       # Number of ticks simulated (Tick)
+
+simInsts                                     46698355                       # Number of instructions simulated (Count)
+simInsts                                     47746939                       # Number of instructions simulated (Count)
+simInsts                                     48412043                       # Number of instructions simulated (Count)
+
+system.caches.controllers0.cacheMemory.m_demand_hits     28051956                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        45413                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28097369                       # Number of cache demand accesses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_hits     28462368                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        61911                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28524279                       # Number of cache demand accesses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_hits     28739429                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        71064                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28810493                       # Number of cache demand accesses (Unspecified)
+
+system.cpu.totalIpc                          0.907043                       # IPC: Total IPC of All Threads ((Count/Cycle))
+system.cpu.totalIpc                          0.724237                       # IPC: Total IPC of All Threads ((Count/Cycle))
+system.cpu.totalIpc                          0.884423                       # IPC: Total IPC of All Threads ((Count/Cycle))
+
+
+SecondChance
+simTicks                                  51212600000                       # Number of ticks simulated (Tick)
+simTicks                                   1532983000                       # Number of ticks simulated (Tick)
+simTicks                                    753329000                       # Number of ticks simulated (Tick)
+
+simInsts                                     46698355                       # Number of instructions simulated (Count)
+simInsts                                     47746939                       # Number of instructions simulated (Count)
+simInsts                                     48412043                       # Number of instructions simulated (Count)
+
+system.caches.controllers0.cacheMemory.m_demand_hits     28061138                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        36038                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28097176                       # Number of cache demand accesses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_hits     28470801                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        52427                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28523228                       # Number of cache demand accesses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_hits     28747489                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        61436                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28808925                       # Number of cache demand accesses (Unspecified)
+
+system.cpu.totalIpc                          0.911853                       # IPC: Total IPC of All Threads ((Count/Cycle))
+system.cpu.totalIpc                          0.684015                       # IPC: Total IPC of All Threads ((Count/Cycle))
+system.cpu.totalIpc                          0.882886                       # IPC: Total IPC of All Threads ((Count/Cycle))
+
+
+TreePLRU
+simTicks                                  51234080000                       # Number of ticks simulated (Tick)
+simTicks                                   1468502000                       # Number of ticks simulated (Tick)
+simTicks                                    758708000                       # Number of ticks simulated (Tick)
+
+simInsts                                     46698355                       # Number of instructions simulated (Count)
+simInsts                                     47746939                       # Number of instructions simulated (Count)
+simInsts                                     48412043                       # Number of instructions simulated (Count)
+
+system.caches.controllers0.cacheMemory.m_demand_hits     28062137                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        36189                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28098326                       # Number of cache demand accesses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_hits     28471830                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        52572                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28524402                       # Number of cache demand accesses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_hits     28748578                       # Number of cache demand hits (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_misses        61566                       # Number of cache demand misses (Unspecified)
+system.caches.controllers0.cacheMemory.m_demand_accesses     28810144                       # Number of cache demand accesses (Unspecified)
+
+system.cpu.totalIpc                          0.911471                       # IPC: Total IPC of All Threads ((Count/Cycle))
+system.cpu.totalIpc                          0.714050                       # IPC: Total IPC of All Threads ((Count/Cycle))
+system.cpu.totalIpc                          0.876627                       # IPC: Total IPC of All Threads ((Count/Cycle))
