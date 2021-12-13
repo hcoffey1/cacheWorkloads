@@ -5,6 +5,7 @@ class dataPoint:
 	epoch = None
 	m_demand_misses = None
 	m_demand_accesses = None
+	ipc = None
 
 def extractData(dict, dir):
 	for file in os.listdir(dir):
@@ -29,6 +30,27 @@ def extractData(dict, dir):
 					tmp = line.split(" ")
 					tmp = list(filter(len, tmp))
 					dict[splitFile[1]][-1].m_demand_accesses = int(tmp[1])
+				if "cpu.ipc" in line:
+					tmp = line.split(" ")
+					tmp = list(filter(len, tmp))
+					dict[splitFile[1]][-1].ipc = float(tmp[1])
+
+def inst_epoch_ipc(dict, bench, xLabel):
+	fig, ax = plt.subplots()
+	for key in sorted(dict.keys()):
+		print(key)
+		x = []
+		y = []
+		for dp in dict[key]:
+			x.append(dp.epoch)
+			y.append(dp.ipc)
+		ax.plot(x,y, label=key)
+
+	plt.title(bench + ": IPC vs executed instructions")
+	plt.xlabel(xLabel)
+	plt.ylabel("IPC")
+	plt.legend()
+	plt.show()
 
 
 def inst_total_miss_graph(dict, bench, xLabel):
@@ -83,13 +105,14 @@ lem_dir = "./data/lem-in/"
 
 extractData(lem_dict,lem_dir)
 #inst_total_miss_graph(lem_dict, "lem-in", "Epoch (100 million instructions)")
-inst_epoch_missrate_graph(lem_dict, "lem-in", "Epoch (100 million instructions)")
+#inst_epoch_missrate_graph(lem_dict, "lem-in", "Epoch (100 million instructions)")
+inst_epoch_ipc(lem_dict, "lem-in", "Epoch (100 million instructions)")
 
 fait_dict = {}
 fait_dir = "./data/fait/"
 
 extractData(fait_dict,fait_dir)
 #inst_total_miss_graph(fait_dict, "fait-maison-spmv", "Epoch (1 million instructions)")
-inst_epoch_missrate_graph(fait_dict, "fait-maison-spmv", "Epoch (1 million instructions)")
+#inst_epoch_missrate_graph(fait_dict, "fait-maison-spmv", "Epoch (1 million instructions)")
 	#		print(line)
 #p1 = ax.scatter()
