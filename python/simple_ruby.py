@@ -38,7 +38,7 @@ IMPORTANT: If you modify this file, it's likely that the Learning gem5 book
 # File modified to use Ruby
 
 
-gem5Path="/home/hayden/proj/cs752/cache/gem5Public/gem5/configs"
+gem5Path="/home/hayden/projects/gem5/configs"
 
 import sys
 sys.path.insert(0, gem5Path)
