@@ -12,6 +12,7 @@ class dataPoint:
 	m_demand_misses = None
 	m_demand_accesses = None
 	ipc = None
+	simInsts = None
 
 def extractData(dict, dir):
 	for file in os.listdir(dir):
@@ -24,13 +25,20 @@ def extractData(dict, dir):
 		epoch=0
 		with open(target_file) as dataFile:
 			for line in dataFile:
-				if "m_demand_misses" in line:
+				if "simInsts" in line:
 					tmpDataPoint = dataPoint()
+					dict[splitFile[1]].append(tmpDataPoint)
+
 					tmp = line.split(" ")
 					tmp = list(filter(len, tmp))
-					tmpDataPoint.epoch = epoch
-					tmpDataPoint.m_demand_misses = int(tmp[1])
-					dict[splitFile[1]].append(tmpDataPoint)
+
+					dict[splitFile[1]][-1].simInsts = int(tmp[1])
+
+				if "m_demand_misses" in line:
+					tmp = line.split(" ")
+					tmp = list(filter(len, tmp))
+					dict[splitFile[1]][-1].epoch = epoch
+					dict[splitFile[1]][-1].m_demand_misses = int(tmp[1])
 					epoch += 1
 				if "m_demand_accesses" in line:
 					tmp = line.split(" ")
@@ -118,19 +126,19 @@ def inst_epoch_mpki_graph(dict, bench, xLabel):
 			x.append(dp.epoch)
 			tmpy.append(dp.m_demand_misses)
 			y.append((dp.m_demand_misses))
-			tmpAcc.append(dp.m_demand_accesses)
-			acc.append(dp.m_demand_accesses)
+			tmpAcc.append(dp.simInsts)
+			acc.append(dp.simInsts)
 
-		y[0] = (y[0]/acc[0])*100
+		y[0] = (y[0]/acc[0])*1000
 		for i in x[1:]:
 			y[i] = (tmpy[i] - tmpy[i-1])
 			acc[i] = (tmpAcc[i] - tmpAcc[i-1])
-			y[i] = (y[i]*1.0/acc[i])*100
+			y[i] = (y[i]*1.0/acc[i])*1000
 		ax.plot(x,y, label=key)
 
-	plt.title(bench + ": Miss rate (%) per executed epoch")
+	plt.title(bench + ": MPKI per executed epoch")
 	plt.xlabel(xLabel)
-	plt.ylabel("Miss Rate %")
+	plt.ylabel("MPKI")
 	plt.legend()
 	plt.show()
 
@@ -139,15 +147,17 @@ lem_dir = "./data/lem-in/"
 
 extractData(lem_dict,lem_dir)
 #inst_total_miss_graph(lem_dict, "lem-in", "Epoch (100 million instructions)")
-#inst_epoch_missrate_graph(lem_dict, "lem-in", "Epoch (100 million instructions)")
+inst_epoch_missrate_graph(lem_dict, "lem-in", "Epoch (100 million instructions)")
 #inst_epoch_ipc(lem_dict, "lem-in", "Epoch (100 million instructions)")
+inst_epoch_mpki_graph(lem_dict, "lem-in", "Epoch (100 million instructions)")
 
 fait_dict = {}
 fait_dir = "./data/fait/"
 
 extractData(fait_dict,fait_dir)
-inst_total_miss_graph(fait_dict, "fait-maison-spmv", "Epoch (1 million instructions)")
+#inst_total_miss_graph(fait_dict, "fait-maison-spmv", "Epoch (1 million instructions)")
 inst_epoch_missrate_graph(fait_dict, "fait-maison-spmv", "Epoch (1 million instructions)")
-inst_epoch_ipc(fait_dict, "fait-maison-spmv", "Epoch (1 million instructions)")
+#inst_epoch_ipc(fait_dict, "fait-maison-spmv", "Epoch (1 million instructions)")
+inst_epoch_mpki_graph(fait_dict, "fait-maison-spmv", "Epoch (1 million instructions)")
 	#		print(line)
 #p1 = ax.scatter()
