@@ -1,0 +1,181 @@
+Global frequency set at 1000000000000 ticks per second
+build/X86/mem/mem_interface.cc:791: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/X86/base/statistics.hh:277: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/X86/base/remote_gdb.cc:377: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 21.1.0.2
+gem5 compiled Dec 11 2021 19:27:41
+gem5 started Dec 18 2021 04:23:53
+gem5 executing on tvirt, pid 6525
+command line: /home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt ../../../../python/simple_ruby.py ../../lem-in --input=../../maps/big_superposition --rp=RRIPRP
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+warn: None.memory is deprecated. The request port for Ruby memory output to the main memory is now called `memory_out_port`
+warn: system.caches.network adopting orphan SimObject param 'int_links'
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+build/X86/sim/simulate.cc:107: info: Entering event queue @ 0.  Starting simulation...
+build/X86/mem/ruby/system/Sequencer.cc:575: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+build/X86/arch/x86/cpuid.cc:180: warn: x86 cpuid family 0x0000: unimplemented function 13
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall access(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+gem5.opt: build/X86/base/circular_queue.hh:397: std::enable_if_t<std::is_integral<Idx>::value, typename std::vector<_Tp>::reference> gem5::CircularQueue<T>::operator[](const Idx&) [with Idx = int; T = gem5::o3::LSQUnit::LSQEntry; std::enable_if_t<std::is_integral<Idx>::value, typename std::vector<_Tp>::reference> = gem5::o3::LSQUnit::LSQEntry&]: Assertion `index >= 0' failed.
+Program aborted at tick 5294498658000
+--- BEGIN LIBC BACKTRACE ---
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xf77fb0)[0x55ac28ff6fb0]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xf975ae)[0x55ac290165ae]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x153c0)[0x7fd3c1abd3c0]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7fd3c106018b]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7fd3c103f859]
+/lib/x86_64-linux-gnu/libc.so.6(+0x25729)[0x7fd3c103f729]
+/lib/x86_64-linux-gnu/libc.so.6(+0x36f36)[0x7fd3c1050f36]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xdd3845)[0x55ac28e52845]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xddc33a)[0x55ac28e5b33a]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xdca1bd)[0x55ac28e491bd]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xdccee3)[0x55ac28e4bee3]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xd8f910)[0x55ac28e0e910]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0x7122fd)[0x55ac287912fd]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0x744762)[0x55ac287c3762]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xd8df48)[0x55ac28e0cf48]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xddce58)[0x55ac28e5be58]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xdc8913)[0x55ac28e47913]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xdaec45)[0x55ac28e2dc45]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xdb0408)[0x55ac28e2f408]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xd7852d)[0x55ac28df752d]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xf85266)[0x55ac29004266]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xfb2fb4)[0x55ac29031fb4]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0xfb3802)[0x55ac29032802]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0x104a8e2)[0x55ac290c98e2]
+/home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt(+0x97a411)[0x55ac289f9411]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8718)[0x7fd3c1d73718]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x7fd3c1b48f48]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7fd3c1c95ecb]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x7fd3c1d730f4]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7fd3c1b3fd6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x7d86)[0x7fd3c1b47ef6]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7fd3c1c95ecb]
+--- END LIBC BACKTRACE ---
+./runTest2.sh: line 3:  6525 Aborted                 (core dumped) ~/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt ../../../../python/simple_ruby.py ../../lem-in --input="../../maps/big_superposition" --rp=RRIPRP

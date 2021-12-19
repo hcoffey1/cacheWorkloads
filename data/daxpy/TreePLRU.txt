@@ -1,6 +1,0 @@
-simTicks                                   1468502000                       # Number of ticks simulated (Tick)
-simInsts                                     47746939                       # Number of instructions simulated (Count)
-system.caches.controllers0.cacheMemory.m_demand_hits     28471830                       # Number of cache demand hits (Unspecified)
-system.caches.controllers0.cacheMemory.m_demand_misses        52572                       # Number of cache demand misses (Unspecified)
-system.caches.controllers0.cacheMemory.m_demand_accesses     28524402                       # Number of cache demand accesses (Unspecified)
-system.cpu.totalIpc                          0.714050                       # IPC: Total IPC of All Threads ((Count/Cycle))

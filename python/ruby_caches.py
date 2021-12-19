@@ -141,7 +141,7 @@ class L1Cache(L1Cache_Controller):
 
         self.version = self.versionCount()
         # This is the cache memory object that stores the cache data and tags
-        self.cacheMemory = RubyCache(size = '32kB',
+        self.cacheMemory = RubyCache(size = '2kB',
                                assoc = 8,
                                # set replacement policies
                                replacement_policy = replacement_policy,
