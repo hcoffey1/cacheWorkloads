@@ -23,46 +23,50 @@ def extractData(dict, dir):
 		target_file = target_dir + "/stats.txt"
 
 		splitFile = file.split("_")
-		dict[splitFile[1]] = []
+		nameIndex = 0
+		if len(splitFile) > 1:
+			nameIndex = 1
+
+		dict[splitFile[nameIndex]] = []
 
 		epoch=0
 		with open(target_file) as dataFile:
 			for line in dataFile:
 				if "simTicks" in line:
 					tmpDataPoint = dataPoint()
-					dict[splitFile[1]].append(tmpDataPoint)
+					dict[splitFile[nameIndex]].append(tmpDataPoint)
 
 					tmp = line.split(" ")
 					tmp = list(filter(len, tmp))
 
-					dict[splitFile[1]][-1].simTicks = int(tmp[1])
+					dict[splitFile[nameIndex]][-1].simTicks = int(tmp[1])
 					
 				elif "cpu.committedInsts" in line:
 					tmp = line.split(" ")
 					tmp = list(filter(len, tmp))
 
-					dict[splitFile[1]][-1].committedInsts = int(tmp[1])
+					dict[splitFile[nameIndex]][-1].committedInsts = int(tmp[1])
 
 				elif "simInsts" in line:
 					tmp = line.split(" ")
 					tmp = list(filter(len, tmp))
 
-					dict[splitFile[1]][-1].simInsts = int(tmp[1])
+					dict[splitFile[nameIndex]][-1].simInsts = int(tmp[1])
 
 				elif "m_demand_misses" in line:
 					tmp = line.split(" ")
 					tmp = list(filter(len, tmp))
-					dict[splitFile[1]][-1].epoch = epoch
-					dict[splitFile[1]][-1].m_demand_misses = int(tmp[1])
+					dict[splitFile[nameIndex]][-1].epoch = epoch
+					dict[splitFile[nameIndex]][-1].m_demand_misses = int(tmp[1])
 					epoch += 1
 				elif "m_demand_accesses" in line:
 					tmp = line.split(" ")
 					tmp = list(filter(len, tmp))
-					dict[splitFile[1]][-1].m_demand_accesses = int(tmp[1])
+					dict[splitFile[nameIndex]][-1].m_demand_accesses = int(tmp[1])
 				elif "cpu.ipc" in line:
 					tmp = line.split(" ")
 					tmp = list(filter(len, tmp))
-					dict[splitFile[1]][-1].ipc = float(tmp[1])
+					dict[splitFile[nameIndex]][-1].ipc = float(tmp[1])
 
 def inst_epoch_ipc(dict, bench, xLabel):
 	fig, ax = plt.subplots()
@@ -267,7 +271,7 @@ def bar_ipc_mpki_graph(dict, bench, xLabel):
 #IPC = 1000*(cpu.commitedInsts / simTicks)
 
 lem_dict = {}
-lem_dir = "./data/lem-in/"
+lem_dir = "./data/2kb/lem-in/"
 
 extractData(lem_dict,lem_dir)
 #inst_total_miss_graph(lem_dict, "lem-in", "Epoch (100 million instructions)")
@@ -276,11 +280,11 @@ extractData(lem_dict,lem_dir)
 #inst_epoch_mpki_graph(lem_dict, "lem-in", "Epoch (100 million instructions)")
 #bar_total_rel_miss_graph(lem_dict, "lem-in", "Replacement Policy")
 #bar_ipc_graph(lem_dict, "lem-in", "Replacement Policy")
-bar_mpki_graph(lem_dict, "lem-in", "Replacement Policy")
-bar_ipc_mpki_graph(lem_dict, "lem-in", "Replacement Policy")
+#bar_mpki_graph(lem_dict, "lem-in", "Replacement Policy")
+#bar_ipc_mpki_graph(lem_dict, "lem-in", "Replacement Policy")
 
 fait_dict = {}
-fait_dir = "./data/fait/"
+fait_dir = "./data/2kb/fait/"
 
 extractData(fait_dict,fait_dir)
 #inst_total_miss_graph(fait_dict, "fait-maison-spmv", "Epoch (1 million instructions)")
@@ -289,7 +293,7 @@ extractData(fait_dict,fait_dir)
 #inst_epoch_mpki_graph(fait_dict, "fait-maison-spmv", "Epoch (1 million instructions)")
 #bar_total_rel_miss_graph(fait_dict, "fait-maison-spmv", "Replacement Policy")
 #bar_ipc_graph(fait_dict, "fait-maison-spmv", "Replacement Policy")
-bar_mpki_graph(fait_dict, "fait-maison-spmv", "Replacement Policy")
-bar_ipc_mpki_graph(fait_dict, "fait-maison-spmv", "Replacement Policy")
+#bar_mpki_graph(fait_dict, "fait-maison-spmv", "Replacement Policy")
+#bar_ipc_mpki_graph(fait_dict, "fait-maison-spmv", "Replacement Policy")
 	#		print(line)
 #p1 = ax.scatter()
