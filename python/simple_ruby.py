@@ -67,6 +67,7 @@ parser.add_argument("--cpu", type=str, help="CPU type. Default: DerivO3CPU.")
 parser.add_argument('--rp', metavar='rp', help=rp_help, default='LRURP')
 parser.add_argument("--options", type=str, help="Command line args")
 parser.add_argument("--input", type=str, help="Input file")
+parser.add_argument("--l1i_size", help="L1 instruction cache size. Default: 32kb.")
 args = parser.parse_args()
 # create the system we are going to simulate
 system = System()
@@ -96,8 +97,7 @@ system.mem_ctrl.dram.range = system.mem_ranges[0]
 
 # Create the (Ruby based) cache system and set up all of the caches
 system.caches = MyCacheSystem()
-system.caches.setup(system, system.cpu, [system.mem_ctrl],
-                                                    rp_list.get(args.rp)())
+system.caches.setup(system, system.cpu, [system.mem_ctrl], rp_list.get(args.rp)(), size=args.l1i_size)
 
 # get ISA for the binary to run.
 isa = str(m5.defines.buildEnv['TARGET_ISA']).lower()

@@ -53,7 +53,7 @@ class MyCacheSystem(RubySystem):
 
         super(MyCacheSystem, self).__init__()
 
-    def setup(self, system, cpus, mem_ctrls, replacement_policy, num_testers=0):
+    def setup(self, system, cpus, mem_ctrls, replacement_policy, size="32kB", num_testers=0):
         """Set up the Ruby cache subsystem. Note: This can't be done in the
            constructor because many of these items require a pointer to the
            ruby system (self). This causes infinite recursion in initialize()
@@ -77,7 +77,7 @@ class MyCacheSystem(RubySystem):
         # Create one controller for each L1 cache (and the cache mem obj.)
         # Create a single directory controller (Really the memory cntrl)
         self.controllers = \
-            [L1Cache(system, self, cpu, replacement_policy) for cpu in cpus] + \
+            [L1Cache(system, self, cpu, replacement_policy, size=size) for cpu in cpus] + \
             [DirController(self, system.mem_ranges, mem_ctrls)]
 
         # Create one sequencer per CPU. In many systems this is more
@@ -133,7 +133,7 @@ class L1Cache(L1Cache_Controller):
         cls._version += 1 # Use count for this particular type
         return cls._version - 1
 
-    def __init__(self, system, ruby_system, cpu, replacement_policy):
+    def __init__(self, system, ruby_system, cpu, replacement_policy, size="32kB"):
         """CPUs are needed to grab the clock domain and system is needed for
            the cache block size.
         """
@@ -141,7 +141,7 @@ class L1Cache(L1Cache_Controller):
 
         self.version = self.versionCount()
         # This is the cache memory object that stores the cache data and tags
-        self.cacheMemory = RubyCache(size = '2kB',
+        self.cacheMemory = RubyCache(size = size,
                                assoc = 8,
                                # set replacement policies
                                replacement_policy = replacement_policy,
