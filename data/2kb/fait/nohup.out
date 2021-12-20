@@ -1,0 +1,231 @@
+Global frequency set at 1000000000000 ticks per second
+build/X86/mem/mem_interface.cc:791: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/X86/base/statistics.hh:277: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/X86/base/remote_gdb.cc:377: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 21.1.0.2
+gem5 compiled Dec 11 2021 19:27:41
+gem5 started Dec 18 2021 19:26:46
+gem5 executing on tvirt, pid 139758
+command line: /home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt ../../../python/simple_ruby.py ../src/sequential/c/run_float --options=../matrices/bcspwr10/bcspwr10.mtx --rp=BRRIPRP
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+warn: None.memory is deprecated. The request port for Ruby memory output to the main memory is now called `memory_out_port`
+warn: system.caches.network adopting orphan SimObject param 'int_links'
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+build/X86/sim/simulate.cc:107: info: Entering event queue @ 0.  Starting simulation...
+build/X86/mem/ruby/system/Sequencer.cc:575: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+build/X86/arch/x86/cpuid.cc:180: warn: x86 cpuid family 0x0000: unimplemented function 13
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall access(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+Input file ../matrices/bcspwr10/bcspwr10.mtx
+done
+Exiting @ tick 283316271000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+build/X86/mem/mem_interface.cc:791: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/X86/base/statistics.hh:277: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/X86/base/remote_gdb.cc:377: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 21.1.0.2
+gem5 compiled Dec 11 2021 19:27:41
+gem5 started Dec 18 2021 19:33:12
+gem5 executing on tvirt, pid 143824
+command line: /home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt ../../../python/simple_ruby.py ../src/sequential/c/run_float --options=../matrices/bcspwr10/bcspwr10.mtx --rp=LRURP
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+warn: None.memory is deprecated. The request port for Ruby memory output to the main memory is now called `memory_out_port`
+warn: system.caches.network adopting orphan SimObject param 'int_links'
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+build/X86/sim/simulate.cc:107: info: Entering event queue @ 0.  Starting simulation...
+build/X86/mem/ruby/system/Sequencer.cc:575: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+build/X86/arch/x86/cpuid.cc:180: warn: x86 cpuid family 0x0000: unimplemented function 13
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall access(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+Input file ../matrices/bcspwr10/bcspwr10.mtx
+done
+Exiting @ tick 264205250000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+build/X86/mem/mem_interface.cc:791: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/X86/base/statistics.hh:277: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/X86/base/remote_gdb.cc:377: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 21.1.0.2
+gem5 compiled Dec 11 2021 19:27:41
+gem5 started Dec 18 2021 19:39:05
+gem5 executing on tvirt, pid 147019
+command line: /home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt ../../../python/simple_ruby.py ../src/sequential/c/run_float --options=../matrices/bcspwr10/bcspwr10.mtx --rp=RandomRP
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+warn: None.memory is deprecated. The request port for Ruby memory output to the main memory is now called `memory_out_port`
+warn: system.caches.network adopting orphan SimObject param 'int_links'
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+build/X86/sim/simulate.cc:107: info: Entering event queue @ 0.  Starting simulation...
+build/X86/mem/ruby/system/Sequencer.cc:575: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+build/X86/arch/x86/cpuid.cc:180: warn: x86 cpuid family 0x0000: unimplemented function 13
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall access(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+Input file ../matrices/bcspwr10/bcspwr10.mtx
+done
+Exiting @ tick 260027712000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+build/X86/mem/mem_interface.cc:791: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/X86/base/statistics.hh:277: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/X86/base/remote_gdb.cc:377: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 21.1.0.2
+gem5 compiled Dec 11 2021 19:27:41
+gem5 started Dec 18 2021 19:45:30
+gem5 executing on tvirt, pid 149817
+command line: /home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt ../../../python/simple_ruby.py ../src/sequential/c/run_float --options=../matrices/bcspwr10/bcspwr10.mtx --rp=SecondChanceRP
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+warn: None.memory is deprecated. The request port for Ruby memory output to the main memory is now called `memory_out_port`
+warn: system.caches.network adopting orphan SimObject param 'int_links'
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+build/X86/sim/simulate.cc:107: info: Entering event queue @ 0.  Starting simulation...
+build/X86/mem/ruby/system/Sequencer.cc:575: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+build/X86/arch/x86/cpuid.cc:180: warn: x86 cpuid family 0x0000: unimplemented function 13
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall access(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+Input file ../matrices/bcspwr10/bcspwr10.mtx
+done
+Exiting @ tick 265756653000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+build/X86/mem/mem_interface.cc:791: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/X86/base/statistics.hh:277: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/X86/base/remote_gdb.cc:377: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 21.1.0.2
+gem5 compiled Dec 11 2021 19:27:41
+gem5 started Dec 18 2021 19:51:34
+gem5 executing on tvirt, pid 152402
+command line: /home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt ../../../python/simple_ruby.py ../src/sequential/c/run_float --options=../matrices/bcspwr10/bcspwr10.mtx --rp=TreePLRURP
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+warn: None.memory is deprecated. The request port for Ruby memory output to the main memory is now called `memory_out_port`
+warn: system.caches.network adopting orphan SimObject param 'int_links'
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+build/X86/sim/simulate.cc:107: info: Entering event queue @ 0.  Starting simulation...
+build/X86/mem/ruby/system/Sequencer.cc:575: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+build/X86/arch/x86/cpuid.cc:180: warn: x86 cpuid family 0x0000: unimplemented function 13
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall access(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+Input file ../matrices/bcspwr10/bcspwr10.mtx
+done
+Exiting @ tick 263376328000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+build/X86/mem/mem_interface.cc:791: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/X86/base/statistics.hh:277: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/X86/base/remote_gdb.cc:377: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 21.1.0.2
+gem5 compiled Dec 11 2021 19:27:41
+gem5 started Dec 18 2021 19:57:28
+gem5 executing on tvirt, pid 155144
+command line: /home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt ../../../python/simple_ruby.py ../src/sequential/c/run_float --options=../matrices/bcspwr10/bcspwr10.mtx --rp=RRIPRP
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+warn: None.memory is deprecated. The request port for Ruby memory output to the main memory is now called `memory_out_port`
+warn: system.caches.network adopting orphan SimObject param 'int_links'
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+build/X86/sim/simulate.cc:107: info: Entering event queue @ 0.  Starting simulation...
+build/X86/mem/ruby/system/Sequencer.cc:575: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+build/X86/arch/x86/cpuid.cc:180: warn: x86 cpuid family 0x0000: unimplemented function 13
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall access(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+Input file ../matrices/bcspwr10/bcspwr10.mtx
+done
+Exiting @ tick 266892948000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+build/X86/mem/mem_interface.cc:791: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/X86/base/statistics.hh:277: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/X86/base/remote_gdb.cc:377: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 21.1.0.2
+gem5 compiled Dec 11 2021 19:27:41
+gem5 started Dec 18 2021 20:03:18
+gem5 executing on tvirt, pid 157643
+command line: /home/hayden/proj/cs752/cache/gem5Public/gem5/build/X86/gem5.opt ../../../python/simple_ruby.py ../src/sequential/c/run_float --options=../matrices/bcspwr10/bcspwr10.mtx --rp=LFURP
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+warn: None.memory is deprecated. The request port for Ruby memory output to the main memory is now called `memory_out_port`
+warn: system.caches.network adopting orphan SimObject param 'int_links'
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+build/X86/sim/simulate.cc:107: info: Entering event queue @ 0.  Starting simulation...
+build/X86/mem/ruby/system/Sequencer.cc:575: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+build/X86/arch/x86/cpuid.cc:180: warn: x86 cpuid family 0x0000: unimplemented function 13
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall access(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/syscall_emul.cc:73: warn: ignoring syscall mprotect(...)
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.
+Input file ../matrices/bcspwr10/bcspwr10.mtx
+done
+Exiting @ tick 658974596000 because exiting with last active thread context
